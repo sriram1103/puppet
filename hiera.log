@@ -1,0 +1,11 @@
+Hiera is a built-in key-value configuration data lookup system, used for separating data from Puppet code. 
+
+The hierarchy
+
+    The hiera.yaml file configures a hierarchy: an ordered list of data sources.
+
+    Hiera searches these data sources in the order they are written. 
+    Higher-priority sources override lower-priority ones. 
+    Most hierarchy levels use variables to locate a data source, so that different nodes get different data.
+
+    This is the core concept of Hiera: a defaults-with-overrides pattern for data lookup, using a node-specific list of data sources.
